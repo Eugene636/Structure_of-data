@@ -50,8 +50,6 @@ void trabb (void) {
   printf ("Please, enter float variable\n");
   scanf ("%lf", &Num[i]);
   }
-  for (int i = 0; i < 11; i++)
-    printf ("Num[%d] = %lf\n", i, Num[i]);
   int l = 0;
   int r = 10;
   int t;
@@ -62,8 +60,6 @@ void trabb (void) {
     Num[r] = t;
     l++; r--;
   }
-  for (int i = 0; i < 11; i++)
-     printf ("Num[%d] = %lf\n", i, Num[i]);
   double out;
   for (int i = 0; i < 11; i++) {
      out = Geron (abs(Num[i]), 1) + 5*Num[i]*Num[i]*Num[i];
